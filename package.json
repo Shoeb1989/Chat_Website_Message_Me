@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "firebase": "^10.12.2",
+    "react-loading": "^2.0.3",
     "react-router-dom": "^6.24.0",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^3.0.1",
+    "react-toastify": "^10.0.5"
   }
 }
