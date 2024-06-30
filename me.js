@@ -29,9 +29,9 @@
 // isleapYear(1950);
 // isleapYear(2026);
  
-let sum = 0;
+let sum = 1;
 for (let i = 1; i<=7; i++){
-    sum = sum + i;
+    sum = sum * i;
     console.log(i,sum);
 
 }
