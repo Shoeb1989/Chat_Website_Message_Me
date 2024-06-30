@@ -2,9 +2,10 @@ import react, { Component } from 'react';
 import {
     Route,
     BrowserRouter as Router,
-    Switch,
+    Swith,
     Redirect
 }   from 'react-router-dom';
+import './App.css';
 import home from './pages/home/home';
 import chat from './pages/Chat/chat';
 import profile from './pages/profile/profile';
@@ -20,7 +21,7 @@ class App extends Component{
       switch(type){
         case 0:
         toast.warning(message)
-        break;
+        break; 
         case 1:
             toast.success(message)
             default :
@@ -31,19 +32,29 @@ class App extends Component{
         super();
         this.state = {
             authenticated: false,
-            Loading: true
+            loading: true
         };
     }
      componentDidMount(){
         firebase.auth().onAuthstatechanged(user => {
   
          if(user){
-            this.setState()
-         }   
-        })
-     }
+            this.setState(
+                authenticated : true,
+                Loading :  false
+            
+            });
+    }
+
+    } else {
+        this.setState({
+            authenticated: false,
+            Loading: false
+        });
+    }
+}
      render(){
         return()
      }
 
-}
+    
