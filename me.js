@@ -16,15 +16,23 @@
 // const mynumberr = isEven(1200);
 // console.log(mynumberr);
 
-function isleapYear (year){
-    const remainder = year % 4;
-    if (remainder === 0){
-        console.log('your year is leap year');
-    }
-    else {
-        console.log('your year is not leap year');
-    }
+// function isleapYear (year){
+//     const remainder = year % 4;
+//     if (remainder === 0){
+//         console.log('your year is leap year');
+//     }
+//     else {
+//         console.log('your year is not leap year');
+//     }
+// }
+
+// isleapYear(1950);
+// isleapYear(2026);
+ 
+let sum = 0;
+for (let i = 1; i<=7; i++){
+    sum = sum + i;
+    console.log(i,sum);
+
 }
 
-isleapYear(1950);
-isleapYear(2026);
