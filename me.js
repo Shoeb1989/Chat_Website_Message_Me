@@ -27,3 +27,4 @@ function isleapYear (year){
 }
 
 isleapYear(1950);
+isleapYear(2026);
